@@ -1,0 +1,46 @@
+{
+  "name": "WEBPACK_of_THOR",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./assets/js/main.js",
+  "scripts": {
+    "installergit": "git clone https://github.com/ThorD125/library ./assets/library && npm install",
+    "installernogit": "echo'git clone https://github.com/ThorD125/library ./assets/library' && npm install",
+    "watchmac": "rm -rf dist/* && webpack --watch --mode development",
+    "watchwin": "rmdir /S /Q dist && mkdir dist && webpack --watch --mode development",
+    "debugwin": "rmdir /S /Q dist && mkdir dist && webpack --stats-children --mode production",
+    "debugmac": "rm -rf dist/* && webpack --stats-children --mode production",
+    "buildmac": "rm -rf dist/* && webpack --mode production",
+    "buildwin": "rmdir /S /Q dist && mkdir dist && webpack --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "bootstrap": "^5.0.1",
+    "bootstrap-loader": "^3.0.4",
+    "bootstrap-sass": "^3.4.1",
+    "browser-sync": "^2.26.14",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "css-loader": "^5.2.5",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "jquery": "^3.6.0",
+    "mini-css-extract-plugin": "^1.6.0",
+    "postcss-loader": "^5.3.0",
+    "sass": "^1.34.0",
+    "sass-loader": "^11.1.1",
+    "style-loader": "^2.0.0",
+    "stylelint": "^13.13.1",
+    "stylelint-webpack-plugin": "^2.1.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "bootstrap-sass-loader": "^1.0.10",
+    "popper.js": "^1.16.1"
+  }
+}

@@ -1,0 +1,47 @@
+body {
+  width: 100%;
+}
+
+.slideshow {
+  background: transparent;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+
+  button {
+    color: black;
+    background-color: transparent;
+
+    &::before {
+      color: black;
+    }
+  }
+
+  .slick-list {
+    .slick-track {
+      display: flex;
+      align-items: center;
+
+      .slick-slide {
+        img {
+          padding: 15%;
+          max-width: 100%;
+          width: 100%;
+          transition: all 0.3s;
+        }
+      }
+
+      .slick-center {
+        img {
+          padding: 10%;
+          max-width: 100%;
+          width: 100%;
+          transition: all 0.3s;
+        }
+      }
+
+      .slick-prev::before,
+      .slick-next::before {
+        color: black;
+      }
+    }
+  }
+}

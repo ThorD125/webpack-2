@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Alba";
+  src:
+    url("./../fonts/Alba.woff2") format("woff2"),
+    url("./../fonts/Alba.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: "Alba";
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 90%;
+  margin: auto;
+}
+
+img {
+  object-fit: cover !important;
+}
